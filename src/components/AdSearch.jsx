@@ -1,6 +1,6 @@
 // src/components/AdSearch.jsx
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom'; // Add Link here
 import JSZip from 'jszip';
 import config from '../config';
 
