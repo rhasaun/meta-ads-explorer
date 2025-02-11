@@ -6,19 +6,21 @@ import './App.css'
 import Login from './components/Login'
 import OAuthCallback from './components/OAuthCallback'
 import AdSearch from './components/AdSearch'
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50">
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/oauth-callback" element={<OAuthCallback />} />
-          <Route path="/" element={<AdSearch />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/oauth-callback" element={<OAuthCallback />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/" element={<AdSearch />} />
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

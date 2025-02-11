@@ -215,6 +215,12 @@ Files included:
                     </div>
                 ))}
             </div>
+         <footer className="mt-8 py-4 border-t">
+            <div className="flex justify-center space-x-4 text-sm text-gray-600">
+                <Link to="/privacy-policy" className="hover:text-gray-900">Privacy Policy</Link>
+                <Link to="/terms-of-service" className="hover:text-gray-900">Terms of Service</Link>
+            </div>
+        </footer>
         </div>
     );
 };
